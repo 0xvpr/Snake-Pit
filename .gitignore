@@ -1,5 +1,6 @@
 ### My ignores ###
 # Python
+.ipynb_checkpoints
 __pycache__
 *.ipynb
 
