@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Snake Pit</title>
+    <meta name="description" content="Command and Control Interface">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tabbed-panels.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/terminal.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script rel="text/javascript" src="{{ url_for('static', filename='js/terminal.js') }}"></script>
+  </head>
+  <div>
+    <h3>Dashboard</h3>
+  </div>
+  <div class="tabbed">
+    <input name="tabbed" id="BotsTab" type="radio" checked>
+    <section>
+      <h1>
+        <label for="BotsTab">Bots</label>
+      </h1>
+      <div>
+        <h3>Bots</h3>
+        <p>List of bots related stuff.</p>
+      </div>
+    </section>
+    <input name="tabbed" id="ServersTab" type="radio">
+    <section>
+      <h1>
+        <label for="ServersTab">Servers</label>
+      </h1>
+      <div>
+        <h3>Servers</h3>
+        <p>List of running servers and their subsidiaries.</p>
+      </div>
+    </section>
+    <input name="tabbed" id="ShellsTab" type="radio">
+    <section>
+      <h1>
+        <label for="ShellsTab">Shells</label>
+      </h1>
+      <div>
+        <h3>Shells</h3>
+        <p>List of open shells.</p>
+        <p>List of closed shells.</p>
+        <p>Array of targeted bots.</p>
+        <section>
+          <div class="terminal">
+            <div id="history"></div>
+            <div class="line">
+              <span id="prefix">:&gt;&nbsp;</span>
+              <input type="text" id="input">
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <input name="tabbed" id="DataTab" type="radio">
+    <section>
+      <h1>
+        <label for="DataTab">Data</label>
+      </h1>
+      <div>
+        <h3>Data</h3>
+        <p>Data received from Bots.</p>
+      </div>
+    </section>
+    <input name="tabbed" id="PayloadsTab" type="radio">
+    <section>
+      <h1>
+        <label for="PayloadsTab">Payloads</label>
+      </h1>
+      <div>
+        <h3>Payloads</h3>
+        <p>List of payloads that are in our arsenal.</p>
+      </div>
+    </section>
+    <input name="tabbed" id="LogsTab" type="radio">
+    <section>
+      <h1>
+        <label for="LogsTab">Logs</label>
+      </h1>
+      <div>
+        <h3>Logs</h3>
+        <p>Logging info from past sessions.</p>
+      </div>
+    </section>
+  </div>
+  
+  <div>
+    <script src="" async defer></script>
+  <div>
+
+</body>
+</html>

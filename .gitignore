@@ -1,0 +1,18 @@
+### My ignores ###
+# Python
+__pycache__
+*.ipynb
+
+# Compiled files
+*.a
+*.o
+*.so
+*.exe
+*.dll
+*.lib
+*.obj
+*.out
+
+# private folders
+private
+secrets
